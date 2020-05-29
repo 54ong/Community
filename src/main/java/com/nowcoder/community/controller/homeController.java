@@ -40,7 +40,7 @@ public class homeController {
                 map.put("user",user);
                 discussPosts.add(map);
             }
-            System.out.println(discussPosts.size());
+
         }
         model.addAttribute("discussPosts",discussPosts);
         return "/index.html"; //?自动访问template底下的文件

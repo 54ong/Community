@@ -4,6 +4,7 @@ import java.util.Date;
 public class User {
     private int id;
     private String userName;
+    private String passWord;
     private String salt;
     private String email;
     private int type;
@@ -11,6 +12,14 @@ public class User {
     private String activationCode;
     private String headerUrl;
     private Date createTime;
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
 
     public int getId() {
         return id;
